@@ -1,0 +1,115 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="play-now.css">
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    
+    <div class="game-container">
+        <div class="head">
+            <div class="whole-logo">
+                <div class="logo"><img src="/Images/logo.png" alt="" width="135" height="45" ></div>
+                <div class="subtext"><img src="/Images/Bible Game For Fun.png" alt="" width="135" height="20"></div>
+            </div>
+
+            
+
+            <div class="pause"> <button id="openPopup"><img src="/images/lil p.PNG" alt=""></button></div>
+
+        </div>
+        
+        <div class="timer">01:00</div>
+
+        <div class="status">
+            <div class="status-bar">
+                <img src="/images/coins.png" alt="Coin Icon" class="coin"> 
+                <span class="points">+200</span>
+                
+            </div>            
+            <div>1 of 25</div>
+            <button onclick="replaceDiv()" id="hint">Hints</button>
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
+
+
+        <div class="question">Hello World</div>
+
+
+        <div class="choices">
+            <div class="choice">A. Joshua</div>
+            <div class="choice">A. Joshua</div>
+            <div class="choice">A. Joshua</div>
+        </div>
+
+        <div id="instructions" class="footer">Instructions here</div>
+        
+        <div id="popup1" style="display: none;">
+            <div class="image-container">
+                <img src="/images/help.png" alt="">
+                <div class="text-overlay" style="color: black;">
+                    GENESIS 4:25
+                </div> 
+            </div>            
+        </div>
+
+    </div>
+    
+    <!-- Pop-up container -->
+    <div id="popup" class="popup-container">
+        <div class="popup-content">
+            <button class="popup-button resume" id="resume">RESUME</button>
+            <button class="popup-button restart" id="restart">RESTART</button>
+            <a href="index.html"><button class="popup-button quit" id="quit">QUIT</button></a>
+        </div>
+    </div>
+    
+    
+    
+    
+<script>
+
+const popup = document.getElementById('popup');
+const openPopup = document.getElementById('openPopup');
+const resume = document.getElementById('resume');
+const restart = document.getElementById('restart');
+const quit = document.getElementById('quit');
+
+// Open the pop-up when button is clicked
+openPopup.addEventListener('click', () => {
+    popup.style.display = 'flex';
+});
+
+// Add functionality to buttons
+resume.addEventListener('click', () => {
+    popup.style.display = 'none';  // Close the popup
+    alert('Resuming the game');
+});
+
+restart.addEventListener('click', () => {
+    popup.style.display = 'none'; 
+    alert('Restarting the game');
+});
+
+quit.addEventListener('click', () => {
+    popup.style.display = 'none'; 
+    alert('Quitting the game');
+});
+ 
+
+
+
+function replaceDiv() {
+            // Hide the first div
+            document.getElementById("instructions").style.display = "none";
+            // Show the second div
+            document.getElementById("popup1").style.display = "block";
+        }
+</script>
+</body>
+</html>

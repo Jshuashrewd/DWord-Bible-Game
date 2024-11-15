@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/fontawesome-free-6.5.2-web/css/all.min.css">
+    <script src="/fontawesome-free-6.5.2-web/js/all.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="pop.css">
+    <link rel="stylesheet" href="level.css">
+    <title>DWord</title>
+</head>
+<body>
+    <section id="header">
+        <div class="header">
+            <div class="left-head">
+                <img src="/Images/Vector Smart Object.png" alt="indigitious" class="logo">
+                <a href="#" class="leaderboard-btn" id="openPopup1">LEADERBOARD</a>
+
+
+    <!-- Pop-up container -->
+    <div id="popup1" class="popup-container">
+        <div class="popup-content">
+            <img class="" src="/Images/logo.png" alt="" width="135" height="45">
+            <h2 class="popup-title">LEADERBOARD</h2>
+            <div class="level-list">
+                <div class="level">James <span>350</span></div>
+                <div class="level">Laura <span>341</span></div>
+                <div class="level">Laura <span>341</span></div>
+                <div class="level">Laura <span>341</span></div>
+                <div class="level">Laura <span>341</span></div>
+            </div>
+                <button class="popup-button" id="back1">BACK</button>
+        </div>
+    </div>
+
+
+            </div>
+
+            <div class="right-head">
+                <img src="/Images/coins.png" alt="" class="coins"><h4 class="amount">+299</h4>
+                <!-- <h5 class="username">Jimmy Olu544</h5>
+                <span class="line">|</span> -->
+                <img src="/Images/profile.png" alt="" class="profile-img" id="openPopup">
+                
+                <div id="popupContainer" class="popup-container5">
+                    <div class="popup-content5">
+                        <span id="closePopup" class="close-button5">&times;</span>
+                        <h4>Account info</h4>
+                            <p>Fullname: Jimmy Olusegun</p>
+                            <p>Username: Jimmyolu544</p>
+                            <p>Email: jimmyolu544@gmail.com</p>
+                            <h4>Account management</h4>
+                            <a href="" class="delete-account5">Delete Account</a>
+                            <a href="/DWord Landing Page/index.html" class="logout-btn5">LOG OUT</a>
+                    </div>
+                </div>
+            
+
+
+            </div>
+        </div>
+    </section>
+    <section id="main-page">
+        <div class="main-page">
+            <div class="main-images">
+                <img src="/Images/logo.png" alt="" class="dword-img">
+                <hr class="bib">
+                <img src="/Images/Bible Game For Fun.png" alt="" class="bible-img">
+                <hr class="bib">
+            </div>
+            <div class="main-buttons">
+            
+                <a href="#" class="newgame-btn" id="openmodal">NEW GAME</a>
+
+                <div class="modal" id="modal">
+                    <div class="modal-content" id="modal-content">
+                        <img src="/Images/logo.png" alt="" class="logo-image">
+                        <div class="modal-title">
+                            <h2>SELECT LEVEL</h2>
+                        </div>
+                        
+                        <div class="level-list1">
+                            <div class="level1">The First Mission</div>
+                            <div class="level1">Times and Seasons</div>
+                            <div class="level1">The Beatitudes</div>
+                            <div class="level1">Solomon's Crown</div>
+                            <div class="level1">Mount Sinai</div>
+                        </div>
+                        <button class="mode-btn" id="openmodal3">MODE</button>
+
+                        <div class="modal3" id="modal3">
+                            <div class="modal-content3" id="modalcontent3">
+                                <h2 class="modal-title3" >MODE</h2>
+                                <div class="option3">
+                                    <input type="radio" id="time-based" name="mode" checked>
+                                    <label for="time-based">TIME BASED</label>
+                                </div>
+                                <div class="option3">
+                                    <input type="radio" id="number-based" name="mode">
+                                    <label for="number-based">NUMBER BASED</label>
+                                </div>
+                                <button class="select-btn3" id="select3">SELECT</button>
+                                <button class="back-btn3" id="back3">BACK</button>
+                            </div>
+                        </div>
+
+                        <a href="play-now.html"><button class="play-btn">PLAY</button></a>
+                        <button class="back-btn" id="back2">BACK</button>
+                    </div>
+                </div>
+
+
+                <a href="#" class="multiplayer-btn">MULTIPLAYER</a>
+                <a href="#" class="scores-btn">SCORES</a>
+                <a href="#" class="exit-btn" id="openPopup4">EXIT</a>
+                
+    <div id="popup4" class="popup4">
+        <div class="popup-content4">
+            <img class="warning-logo" src="/Images/logo.png" alt="">
+            <div class="popup-header4">
+                <img src="/images/warning.png" alt="Warning Icon">
+            </div>
+            <p class="warning-text">ARE YOU SURE YOU WANT <br> TO QUIT?</p>
+            <div class="popup-buttons4">
+                <button id="yesBtn" class="yes">YES</button>
+                <button id="noBtn" class="no">NO</button>
+            </div>
+        </div>
+    </div>
+
+
+
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

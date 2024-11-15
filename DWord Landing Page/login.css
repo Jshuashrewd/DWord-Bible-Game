@@ -1,0 +1,115 @@
+/* Modal background */
+.modal-background1 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+hr{
+    width: 75%;
+    margin-top: 15px;
+}
+
+/* Modal content */
+.modal-content1 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #050f0e;
+    border-radius: 10px;
+    width: 40%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+/* Login form styles */
+.login-header1 {
+    background-color: #fb2500;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.login-form1 input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    padding: 10px 3% 10px 3%;
+    background-color: #133b3a;
+    border: none;
+    color: white;
+    border-radius: 5px;
+
+}
+
+.login-form1 button {
+    width: 80%;
+    padding: 10px;
+    background-color: #236160;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.social-login-buttons1 {
+    width: 95%;
+    margin-top: 15px;
+
+}
+
+.social-login-buttons1 button {
+    width: 95%;
+    padding: 10px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.social-login-buttons1 img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Close button */
+.close-btn1 {
+    align-self: flex-end;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    margin: 10px 10px 0 0;
+}
+
+@media(max-width:490px){
+    .modal-content1{
+        width: 90%;
+    }
+}
+
+@media (min-width: 768px) {
+    .modal-content1{
+        width: 60%;
+    }
+} 
+
+@media (min-width: 1040px) {
+    .modal-content1{
+        width: 30%;
+    }
+}
